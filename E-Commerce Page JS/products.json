@@ -1,0 +1,68 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "nike air max",
+          "price": 60.99,
+          "image": { "fields": { "file": { "url": "./images/prod-1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Nike final edition",
+          "price": 109.99,
+          "image": { "fields": { "file": { "url": "./images/prod-2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Nike retro",
+          "price": 149.99,
+          "image": { "fields": { "file": { "url": "./images/prod-3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "New balance Cross",
+          "price": 99.99,
+          "image": { "fields": { "file": { "url": "./images/prod-4.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Nike Max Air retro",
+          "price": 79.99,
+          "image": { "fields": { "file": { "url": "./images/prod-5.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Adidas new edition",
+          "price": 139.99,
+          "image": { "fields": { "file": { "url": "./images/prod-6.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Nike airforce",
+          "price": 109.99,
+          "image": { "fields": { "file": { "url": "./images/prod-7.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Nike modern",
+          "price": 149.99,
+          "image": { "fields": { "file": { "url": "./images/prod-8.jpg" } } }
+        }
+      }
+    ]
+  }
