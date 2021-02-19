@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./Slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./Slick/slick-1.8.1/slick/slick.css">
+    <title>Travel Single Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c06567aaeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header" id="home">
+        <div class="header-wrapper">
+            <div class="navbar-wrapper">
+                <nav class="navbar container">
+                    <div class="brand-and-toggler container">
+                        <a href="index.html" class="navbar-brand">Travel.</a>
+                        <button type="button" class="navbar-toggler" id="navbar-toggler">
+                            <span>
+                                <i class="fas fa-bars"></i>MENU
+                            </span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav container">
+                            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                            <li class="nav-item"><a href="#destacado" class="nav-link">Destacado</a></li>
+                            <li class="nav-item"><a href="#tour" class="nav-link">Tour</a></li>
+                            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <h1 class="banner-title"><span>Explora</span> el hermoso mundo</h1>
+                    <h5 class="banner-text1">Mejor cerca</h5>
+                    <p class="description">Descubre alojamientos cercanos</p>
+                    <form class="banner-form">
+                        <div class="form-element">
+                            <input type="text" class="form-control" placeholder="Comida, Hotel, Servicios">
+                        </div>
+                        <div class="form-element">
+                            <select name="places" class="form-control">
+                                <option value="where">Ubicación</option>
+                                <option value="USA">Nueva York</option>
+                                <option value="Germany">Berlin</option>
+                                <option value="UK">London</option>
+                                <option value="Italy">Paris</option>
+                            </select>
+                        </div>
+                        <div class="form-element">
+                            <input type="submit" class="banner-btn" value="Search">
+                        </div>
+                    </form>
+                    <p class="banner-text">Echa un vistazo a lo mas destacado</p>
+                    <div class="banner-btns">
+                        <button type="button" class="banner-btn">
+                            <span><i class="fas fa-utensils"></i></span>Restaurantes
+                        </button>
+                        <button type="button" class="banner-btn">
+                            <span><i class="fas fa-hotel"></i></span>Hoteles
+                        </button>
+                        <button type="button" class="banner-btn">
+                            <span><i class="fas fa-map-marker-alt"></i></span>Destinos
+                        </button>
+                        <button type="button" class="banner-btn">
+                            <span><i class="fas fa-shopping-cart"></i></span>Compras
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--About section-->
+    <section class="about section-py" id="nosotros">
+        <div class="container">
+            <span class="section-name">
+                Nosotros
+            </span>
+            <h2 class="section-title"><span>Nuestra</span> Reputación</h2>
+            <div class="about-wrapper">
+                <div class="single-about">
+                    <span><i class="fas fa-award"></i></span>
+                    <h2 class="normal-title">Mejores Precios</h2>
+                    <p class="normal-para">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum distinctio animi veniam
+                        sequi eligendi magni quisquam deserunt delectus voluptatibus et.
+                    </p>
+                </div>
+                <div class="single-about">
+                    <span><i class="fas fa-heart"></i></span>
+                    <h2 class="normal-title">Los viajeros nos aman</h2>
+                    <p class="normal-para">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum distinctio animi veniam
+                        sequi eligendi magni quisquam deserunt delectus voluptatibus et.
+                    </p>
+                </div>
+                <div class="single-about">
+                    <span><i class="fas fa-passport"></i></span>
+                    <h2 class="normal-title">Mejores agentes de viaje</h2>
+                    <p class="normal-para">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum distinctio animi veniam
+                        sequi eligendi magni quisquam deserunt delectus voluptatibus et.
+                    </p>
+                </div>
+                <div class="single-about">
+                    <span><i class="fas fa-cog"></i></span>
+                    <h2 class="normal-title">Atencion en todo momento</h2>
+                    <p class="normal-para">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum distinctio animi veniam
+                        sequi eligendi magni quisquam deserunt delectus voluptatibus et.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--featured section-->
+
+    <section class="featured section-py" id="destacado">
+        <div class="container">
+            <span class="section-name">
+                Destacado
+            </span>
+            <h2 class="section-title"><span>Destinos</span> mas visitados</h2>
+            <div class="gallery">
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-1.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Paris, Francia</p>
+                    </div>
+                </div>
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-2.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Nueva York, EEUU</p>
+                    </div>
+                </div>
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-3.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Punta Cana, Rep.Dom</p>
+                    </div>
+                </div>
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-4.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Kitayama, Japón</p>
+                    </div>
+                </div>
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-5.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Venecia, Italia</p>
+                    </div>
+                </div>
+                <div class="single-place">
+                    <div class="single-place-img">
+                        <img src="./images/place-7.jpg" alt="Destinos">
+                        <span class="display-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="single-place-info">
+                        <p>Londres, Reino Unido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tour section -->
+    <section class="tour section-py" id="tour">
+        <div class="container">
+            <span class="section-name">
+                Ofertas especiales
+            </span>
+            <h2 class="section-title">
+                <span>Top</span> Paquetes de viajes
+            </h2>
+
+            <div class="tour-wrapper">
+                <!-- single tour card -->
+                <div class="card">
+                    <img src="images/place-7.jpg" alt="tour places">
+                    <div class="card-body">
+                        <div class="tour-place">
+                            <h2 class="tour-price">$299</h2>
+                        </div>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h6 class="rating-text">Valoración</h6>
+                        <p class="normal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            incidunt quam consequuntur quia beatae minima quos non?</p>
+                        <p class="normal-para">2 dias, 3 noches</p>
+                        <hr>
+                    </div>
+                    <div class="card-footer">
+                        <span class="normal-para">
+                            <i class="fas fa-map"></i> Londres, Reino Unido
+                        </span>
+                        <button class="btn-green">
+                            Descubrir
+                        </button>
+                    </div>
+                </div>
+                <!-- end of single tour card -->
+
+                <!-- single tour card -->
+                <div class="card">
+                    <img src="images/berlin.jpg" alt="tour places">
+                    <div class="card-body">
+                        <div class="tour-place">
+                            <h2 class="tour-price">$199</h2>
+                        </div>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h6 class="rating-text">Valoración</h6>
+                        <p class="normal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            incidunt quam consequuntur quia beatae minima quos non?</p>
+                        <p class="normal-para">3 dias 4, noches</p>
+                        <hr>
+                    </div>
+                    <div class="card-footer">
+                        <span class="normal-para">
+                            <i class="fas fa-map"></i> Berlin, Alemania
+                        </span>
+                        <button class="btn-green">
+                            Descubrir
+                        </button>
+                    </div>
+                </div>
+                <!-- end of single tour card -->
+
+                <!-- single tour card -->
+                <div class="card">
+                    <img src="images/rome.jpg" alt="tour places">
+                    <div class="card-body">
+                        <div class="tour-place">
+                            <h2 class="tour-price">$289</h2>
+                        </div>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h6 class="rating-text">Valoración</h6>
+                        <p class="normal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            incidunt quam consequuntur quia beatae minima quos non?</p>
+                        <p class="normal-para">2 dias, 3 noches</p>
+                        <hr>
+                    </div>
+                    <div class="card-footer">
+                        <span class="normal-para">
+                            <i class="fas fa-map"></i> Roma, Italia
+                        </span>
+                        <button class="btn-green">
+                            Descubrir
+                        </button>
+                    </div>
+                </div>
+                <!-- end of single tour card -->
+                <!-- single tour card -->
+                <div class="card">
+                    <img src="images/paris.jpg" alt="tour places">
+                    <div class="card-body">
+                        <div class="tour-place">
+                            <h2 class="tour-price">$449</h2>
+                        </div>
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h6 class="rating-text">Valoración</h6>
+                        <p class="normal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            incidunt quam consequuntur quia beatae minima quos non?</p>
+                        <p class="normal-para">4 dias, 5 noches</p>
+                        <hr>
+                    </div>
+                    <div class="card-footer">
+                        <span class="normal-para">
+                            <i class="fas fa-map"></i> Paris, Francia
+                        </span>
+                        <button class="btn-green">
+                            Descubrir
+                        </button>
+                    </div>
+                </div>
+                <!-- end of single tour card -->
+            </div>
+        </div>
+    </section>
+    <!-- end of tour section -->
+    <section class="facts section-py">
+        <div class="container">
+            <h2>El cielo es el limite</h2>
+            <p class="normal-para">Nuestros numeros hablan por nosotros</p>
+            <div class="fact-wrapper">
+                <div class="single-data">
+                    <span class="numscroller" data-min="1" data-max="500" data-delay="20" data-increment="5">0</span>
+                    <span class="numscroller-text">Clientes satisfechos</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller" data-min="1" data-max="151" data-delay="20" data-increment="5">0</span>
+                    <span class="numscroller-text">Destinos</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller" data-min="1" data-max="615" data-delay="20" data-increment="5">0</span>
+                    <span class="numscroller-text">Hoteles</span>
+                </div>
+                <div class="single-data">
+                    <span class="numscroller" data-min="1" data-max="720" data-delay="20" data-increment="5">0</span>
+                    <span class="numscroller-text">Restaurantes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog section-->
+    <section class="blog section-py" id="blog">
+        <div class="container">
+            <span class="section-home">Blogs Recientes</span>
+            <h2 class="section-title">
+                <span>Tips</span> & Articulos
+            </h2>
+            <div class="blog-wrapper">
+                <!--Single blog card-->
+                <div class="card2">
+                    <img src="./images/img-1.jpg" alt="Blog">
+                    <div class="card-body">
+                        <p class="normal-text">Tips, Viajes</p>
+                        <a href="#" class="normal-title blog-link">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Maxime, quidem quod dolor expedita eveniet numquam!</a>
+                        <p class="normal-text">Enero 12, 2021</p>
+                        <span class="normal-text">
+                            <i class="fas fa-comment-alt"></i> 3
+                        </span>
+                    </div>
+                </div>
+                <!--end of single blog card-->
+                <!--Single blog card-->
+                <div class="card2">
+                    <img src="./images/food.jpg" alt="Blog">
+                    <div class="card-body">
+                        <p class="normal-text">Tips, Comidas</p>
+                        <a href="#" class="normal-title blog-link">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Maxime, quidem quod dolor expedita eveniet numquam!</a>
+                        <p class="normal-text">Enero 20, 2021</p>
+                        <span class="normal-text">
+                            <i class="fas fa-comment-alt"></i> 5
+                        </span>
+                    </div>
+                </div>
+                <!--end of single blog card-->
+                <!--Single blog card-->
+                <div class="card2">
+                    <img src="./images/beach.jpg" alt="Blog">
+                    <div class="card-body">
+                        <p class="normal-text">Playas famosas</p>
+                        <a href="#" class="normal-title blog-link">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Maxime, quidem quod dolor expedita eveniet numquam!</a>
+                        <p class="normal-text">Febrero 10, 2021</p>
+                        <span class="normal-text">
+                            <i class="fas fa-comment-alt"></i> 10
+                        </span>
+                    </div>
+                </div>
+                <!--end of single blog card-->
+                <!--Single blog card-->
+                <div class="card2">
+                    <img src="./images/drink.jpg" alt="Blog">
+                    <div class="card-body">
+                        <p class="normal-text">Tips, Bebidas</p>
+                        <a href="#" class="normal-title blog-link">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Maxime, quidem quod dolor expedita eveniet numquam!</a>
+                        <p class="normal-text">Febrero 19, 2021</p>
+                        <span class="normal-text">
+                            <i class="fas fa-comment-alt"></i> 2
+                        </span>
+                    </div>
+                </div>
+                <!--end of single blog card-->
+            </div>
+        </div>
+    </section>
+    <!--Newsletter section-->
+    <section class="newsletter section-py">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <h2>Suscribete a nuestro Newsletter</h2>
+                <p class="normal-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae enim
+                    praesentium culpa laborum fuga dicta voluptatem.</p>
+                <form class="subscribe-form">
+                    <div class="form-element">
+                        <input type="email" class="input-one" placeholder="Escribe tu e-mail">
+                    </div>
+                    <div class="form-element">
+                        <input type="submit" class="input-two" value="Suscribirme">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial section-->
+    <section class="testimonial section-py">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <!-- testimonial left -->
+                <div class="testimonial-left">
+                    <span class="section-name">Best Directory Website</span>
+                    <h2 class="section-title">
+                        <span>¿Porque</span> Nosotros?
+                    <p class="normal-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum iusto fugit architecto
+                        nesciunt recusandae, officia, maiores possimus, soluta eos non.
+                    </p>
+                    <p class="normal-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt exercitationem
+                        pariatur nostrum laudantium repudiandae quis?</p>
+                    <button type="button" class="btn-circle">Leer más</button>
+                </div>
+                <!-- testimonial right -->
+                <div class="testimonial-right">
+                    <span class="section-name">Testimonio</span>
+                    <h2 class="section-title">
+                        <span>Nuestros</span> clientes dicen
+                    </h2>
+                    <div class="test-slider">
+                        <!-- single testimonial -->
+                        <div class="test-single">
+                            <div class="test-img">
+                                <img src="images/person-1.jpg" alt="guest person">
+                                <span class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </span>
+                            </div>
+                            <div class="text-content">
+                                <p class="normal-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi iure iste
+                                    consequuntur reprehenderit neque obcaecati voluptatibus eaque explicabo? Doloremque?
+                                </p>
+                                <div class="about-guest">
+                                    <p>Lissa Lopéz</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of single testimonial -->
+                        <!-- single testimonial -->
+                        <div class="test-single">
+                            <div class="test-img">
+                                <img src="images/person-2.jpg" alt="guest person">
+                                <span class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </span>
+                            </div>
+                            <div class="text-content">
+                                <p class="normal-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi iure iste
+                                    consequuntur reprehenderit neque obcaecati voluptatibus eaque explicabo? Doloremque?
+                                </p>
+                                <div class="about-guest">
+                                    <p>Maria Martinez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of single testimonial -->
+                        <!-- single testimonial -->
+                        <div class="test-single">
+                            <div class="test-img">
+                                <img src="images/person-3.jpg" alt="guest person">
+                                <span class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </span>
+                            </div>
+                            <div class="text-content">
+                                <p class="normal-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi iure iste
+                                    consequuntur reprehenderit neque obcaecati voluptatibus eaque explicabo? Doloremque?
+                                </p>
+                                <div class="about-guest">
+                                    <p>Dennis Green</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of single testimonial -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of testimonial section -->
+    <!--Footer-->
+    <footer class="footer section-py" id="contacto">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-div footer-div1">
+                    <h2 class="normal-title">Travel.</h2>
+                    <p class="normal-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minus.</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <span>
+                                <i class = "fab fa-twitter"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <i class = "fab fa-facebook"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <i class = "fab fa-instagram"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-div footer-div2">
+                    <h2 class="normal-title">Información</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                        <li><a href="#">Conviertete en un colaborador</a></li>
+                        <li><a href="#">Garantias</a></li>
+                        <li><a href="#">Politica de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div footer-div3">
+                    <h2 class="normal-title">Atencion al Cliente</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Opciones de pago</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Cómo funciona</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div footer-div3">
+                    <h2 class="normal-title">¿Tienes preguntas?</h2>
+                    <ul class="footer-links">
+                        <li class="contact-single">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                            </span>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="contact-single">
+                            <span>
+                                <i class = "fas fa-phone"></i>
+                            </span>
+                            <span>+34 555 555 555</span>
+                        </li>
+                        <li class="contact-single">
+                            <span>
+                                <i class = "fas fa-envelope"></i>
+                            </span>
+                            <span>correo@correo.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>Copyright &copy | 2021 | Todos los derechos reservados | Claudio Alcantara</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="./js/main.js"></script>
+    <script src="./Slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./numscroller-gh-pages/numscroller-1.0.js"></script>
+</body>
+
+</html>
